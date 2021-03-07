@@ -1,0 +1,22 @@
+
+@import "../styles.scss";
+
+.full-container{
+    height: $page-height;
+    margin:2em;
+    width: calc(100vw - 4em);
+}
+
+.content-container{
+    // margin: 2em 2em 2em 17em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    // align-items: center;
+    // align-content: center;
+    height:$page-height;
+}
+
+.mat-expansion-panel-header-title{
+    height:100%;
+}

@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./theme.scss";
+@import '~highlight.js/styles/github.css';
+
+
+// ----------- //
+//  Variables  //
+// ----------- //
+$page-height: 85vh;
+$purple-grey: rgb(179,179,204);
+
+
+html, body { height: 100%; width:100%; position:fixed;}
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  background-color: #414141!important; 
+}
+
+
+.mat-icon{
+    font-family: 'Material Icons' !important;
+}
+
+
+// .mat-form-field.mat-form-field-invalid {
+//     .mat-form-field-label {
+//       color: red!important;
+//       opacity:.6!important;
+
+//       &.mat-accent,
+//       .mat-form-field-required-marker {
+//         color: red!important;
+//         opacity:.6!important;
+//       }
+//     }
+
+//     .mat-form-field-ripple,
+//     .mat-form-field-ripple.mat-accent {
+//       background-color: red!important;
+//       opacity:.6!important;
+//     }
+//   }
+
+//   .mat-tab-labels {
+//     justify-content: center;
+// }
+// .user-image {
+//   max-height: 40px;
+// }
+
+// .cdk-global-overlay-wrapper{
+//   align-items: center!important;
+//   justify-content: center!important;
+// }
+
+// #static-email {
+//   .mat-form-field-underline::before {
+    //   background: #121212 !important;
+//   }
+//   .mat-form-field-underline {
+    //   background: #121212 !important;
+//   }
+//   .mat-form-field-ripple {
+    //   background: #121212;
+//   }   
+// }

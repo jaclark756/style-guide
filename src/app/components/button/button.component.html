@@ -1,0 +1,21 @@
+<mat-expansion-panel hideToggle class="expansion-container">
+    <mat-expansion-panel-header collapsedHeight="10em" expandedHeight="10em"  class="expansion-header">
+        <mat-panel-title>
+        Button
+        </mat-panel-title>
+        <mat-panel-description class="mat-panel-item-display">
+        <button mat-raised-button color="primary" isRoundButton="true">Button Example</button>
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-tab-group mat-align-tabs="start" mat-stretch-tabs>
+        <mat-tab id="button-html" label="HTML">
+            <pre><code [highlight]="htmlSnippet"></code></pre>
+        </mat-tab>
+        <mat-tab id="button-scss" label="SCSS">
+
+        </mat-tab>
+        <mat-tab id="button-ts" label="TS">
+
+        </mat-tab>
+    </mat-tab-group>
+</mat-expansion-panel>

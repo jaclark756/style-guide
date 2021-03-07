@@ -1,0 +1,5 @@
+<aside class="fixed-sidenav">
+    <mat-nav-list>
+        <a mat-list-item *ngFor="let component of components" routerLink="{{component?.link}}" routerLinkActive="active">{{component?.display}}</a>
+    </mat-nav-list>
+</aside>
