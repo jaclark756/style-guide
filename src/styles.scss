@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./theme.scss";
+@import '~@angular/material/theming';
 @import '~highlight.js/styles/atom-one-dark.css';
 
 
@@ -22,46 +23,12 @@ body {
     font-family: 'Material Icons' !important;
 }
 
+@include angular-material-theme($main-app-theme);
 
-// .mat-form-field.mat-form-field-invalid {
-//     .mat-form-field-label {
-//       color: red!important;
-//       opacity:.6!important;
+.default-theme{
+  @include angular-material-theme($main-app-theme);
+}
+.dark-theme{
+  @include angular-material-theme($dark-theme);
+}
 
-//       &.mat-accent,
-//       .mat-form-field-required-marker {
-//         color: red!important;
-//         opacity:.6!important;
-//       }
-//     }
-
-//     .mat-form-field-ripple,
-//     .mat-form-field-ripple.mat-accent {
-//       background-color: red!important;
-//       opacity:.6!important;
-//     }
-//   }
-
-//   .mat-tab-labels {
-//     justify-content: center;
-// }
-// .user-image {
-//   max-height: 40px;
-// }
-
-// .cdk-global-overlay-wrapper{
-//   align-items: center!important;
-//   justify-content: center!important;
-// }
-
-// #static-email {
-//   .mat-form-field-underline::before {
-    //   background: #121212 !important;
-//   }
-//   .mat-form-field-underline {
-    //   background: #121212 !important;
-//   }
-//   .mat-form-field-ripple {
-    //   background: #121212;
-//   }   
-// }

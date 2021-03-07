@@ -1,5 +1,6 @@
 
-@import "../styles.scss";
+@import '~@angular/material/theming';
+@import '../styles.scss';
 
 .full-container{
     height: $page-height;

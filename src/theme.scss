@@ -4,15 +4,48 @@
 
 
 // Copy the palettes from your selected theme (usually theme.scss).
-$app-primary: mat-palette($mat-blue-grey, 900, 300, 900);
-$app-accent:  mat-palette($mat-teal, A200, 300, 900);
-$app-warn:    mat-palette($mat-light-green, A100, 300, 900);
+// $app-primary: mat-palette($mat-blue-grey, 900, 300, 900);
+// $app-accent:  mat-palette($mat-teal, A200, 300, 900);
+// $app-warn:    mat-palette($mat-light-green, A100, 300, 900);
 
-// Create your Sass color vars (will be available in all the project)
-$primary: mat-color($app-primary);
-$accent: mat-color($app-accent);
-$warn: mat-color($app-warn);
+// // Create your Sass color vars (will be available in all the project)
+// $primary: mat-color($app-primary);
+// $accent: mat-color($app-accent);
+// $warn: mat-color($app-warn);
 
 
-$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
-@include angular-material-theme($app-theme);
+// $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+
+// @include angular-material-theme($app-theme);
+
+$main-primary: mat-palette($mat-blue-grey, 900, 300, 900);
+$main-accent:  mat-palette($mat-teal, A200, 300, 900);
+$main-warn:    mat-palette($mat-light-green, A100, 300, 900);
+
+$main-app-theme: mat-light-theme(
+    $main-primary,
+    $main-accent,
+    $main-warn
+);
+
+$dark-primary: mat-palette($mat-blue-grey);
+$dark-accent: mat-palette($mat-amber, A200, A100, A400);
+$dark-warn: mat-palette($mat-deep-orange);
+$dark-theme: mat-light-theme(
+    $dark-accent,
+    $dark-primary,
+    $dark-warn
+);
+// $dark-theme: mat-dark-theme(
+//   (
+    // color: (
+    //   primary: $dark-accent,
+    //   accent: $dark-primary,
+    //   warn: $dark-warn,
+    // ),
+//   )
+// );
+
+// .default-theme{
+//     @include angular-material-theme($main-app-theme)
+// }
