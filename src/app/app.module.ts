@@ -19,6 +19,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
 import { PaletteComponent } from './components/palette/palette.component';
 
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +43,9 @@ import { PaletteComponent } from './components/palette/palette.component';
     MatButtonModule,
     MatTabsModule,
     HighlightModule,
+    MatFormFieldModule, 
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [
     {
