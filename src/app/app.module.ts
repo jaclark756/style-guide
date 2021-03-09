@@ -17,11 +17,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
-// import { PaletteComponent } from './components/palette/palette.component';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import { ColorComponent } from './components/color/color.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import {MatSelectModule} from '@angular/material/select';
     InputComponent,
     SidenavComponent,
     ComponentDisplayComponent,
-    // PaletteComponent
+    ColorComponent
   ],
   imports: [
     BrowserModule,
