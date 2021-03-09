@@ -17,6 +17,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
+import { PaletteComponent } from './components/palette/palette.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     CardComponent,
     InputComponent,
     SidenavComponent,
-    ComponentDisplayComponent
+    ComponentDisplayComponent,
+    PaletteComponent
   ],
   imports: [
     BrowserModule,
