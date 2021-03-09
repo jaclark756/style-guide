@@ -1,5 +1,6 @@
 // Import material theming functions
 @import '~@angular/material/theming';
+@import './palette';
 @include mat-core();
 
 
@@ -18,8 +19,10 @@
 
 // @include angular-material-theme($app-theme);
 
-$main-primary: mat-palette($mat-blue-grey, 900, 300, 900);
-$main-accent:  mat-palette($mat-teal, A200, 300, 900);
+
+
+$main-primary:  mat-palette($md-teal, 500, 300, 900);
+$main-accent: mat-palette($mat-blue-grey, 900, 300, 900);
 $main-warn:    mat-palette($mat-light-green, A100, 300, 900);
 
 $main-app-theme: mat-light-theme(
@@ -27,6 +30,7 @@ $main-app-theme: mat-light-theme(
     $main-accent,
     $main-warn
 );
+
 
 $dark-primary: mat-palette($mat-blue-grey);
 $dark-accent: mat-palette($mat-amber, A200, A100, A400);
