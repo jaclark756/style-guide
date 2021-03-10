@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
+import {ClipboardModule} from '@angular/cdk/clipboard'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import {MatTooltipModule} from '@angular/material/tooltip';
 import { ColorComponent } from './components/color/color.component';
 
 @NgModule({
@@ -45,7 +47,9 @@ import { ColorComponent } from './components/color/color.component';
     HighlightModule,
     MatFormFieldModule, 
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTooltipModule,
+    ClipboardModule
   ],
   providers: [
     {

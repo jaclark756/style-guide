@@ -7,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColorComponent implements OnInit {
 
+  $black = "$black";
+  $jet = "$jet";
+  $onyx = "$onyx";
+  $metal = "$metal";
+  $teal = "$teal";
+  $watermelon = "$watermelon";
+  $mint = "$mint";
+  $powder = "$powder";
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
  
 }
