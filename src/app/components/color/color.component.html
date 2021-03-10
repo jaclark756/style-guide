@@ -1,18 +1,22 @@
 <div class="flex-container">
-    <button mat-fab class="black" [cdkCopyToClipboard]="$black" matTooltip="$black">
+    <button mat-fab class="black" [cdkCopyToClipboard]="$black" (click)="openSnackBar()" matTooltip="$black">
     </button>
-    <button mat-fab class="jet" [cdkCopyToClipboard]="$jet" matTooltip="$jet">
+    <button mat-fab class="jet" [cdkCopyToClipboard]="$jet" (click)="openSnackBar()" matTooltip="$jet">
     </button>
-    <button mat-fab class="onyx" [cdkCopyToClipboard]="$onyx" matTooltip="$onyx">
+    <button mat-fab class="onyx" [cdkCopyToClipboard]="$onyx" (click)="openSnackBar()" matTooltip="$onyx">
     </button>
-    <button mat-fab class="metal" [cdkCopyToClipboard]="$metal" matTooltip="$metal">
+    <button mat-fab class="metal" [cdkCopyToClipboard]="$metal" (click)="openSnackBar()" matTooltip="$metal">
     </button>
-    <button mat-fab class="teal" [cdkCopyToClipboard]="$teal" matTooltip="$teal">
+    <button mat-fab class="teal" [cdkCopyToClipboard]="$teal" (click)="openSnackBar()" matTooltip="$teal">
     </button>
-    <button mat-fab class="watermelon" [cdkCopyToClipboard]="$watermelon" matTooltip="$watermelon">
+    <button mat-fab class="watermelon" [cdkCopyToClipboard]="$watermelon" (click)="openSnackBar()" matTooltip="$watermelon">
     </button>
-    <button mat-fab class="mint" [cdkCopyToClipboard]="$mint" matTooltip="$mint"> 
+    <button mat-fab class="mint" [cdkCopyToClipboard]="$mint" (click)="openSnackBar()" matTooltip="$mint"> 
     </button>
-    <button mat-fab class="powder" [cdkCopyToClipboard]="$powder" matTooltip="$powder">
+    <button mat-fab class="powder" [cdkCopyToClipboard]="$powder" (click)="openSnackBar()" matTooltip="$powder">
     </button>
+    <mat-form-field>
+        <mat-label>Message</mat-label>
+        <input matInput value="Variable Copied!" #message>
+      </mat-form-field>
 </div>

@@ -25,6 +25,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { ColorComponent } from './components/color/color.component';
 import { HeaderComponent } from './components/header/header.component';
+import {MatSnackBar} from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [
@@ -51,7 +53,8 @@ import { HeaderComponent } from './components/header/header.component';
     MatInputModule,
     MatSelectModule,
     MatTooltipModule,
-    ClipboardModule
+    ClipboardModule,
+    MatSnackBar
   ],
   providers: [
     {

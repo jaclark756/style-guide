@@ -15,11 +15,19 @@ export class ColorComponent implements OnInit {
   $watermelon = "$watermelon";
   $mint = "$mint";
   $powder = "$powder";
+  private _snackBar: any;
 
 
   constructor() { }
+ 
 
-  ngOnInit(): void {
+  openSnackBar(message: string) {
+    this._snackBar.open(message, {
+      duration: 2000,
+    });
   }
  
+  ngOnInit(): void {
+  }
+  
 }
