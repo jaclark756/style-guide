@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
-  constructor() { }
+  htmlSnippet: any;
+
+  constructor() { 
+    this.htmlSnippet = '<div class="form-example"><br> <mat-form-field class="input-example" appearance="fill"> <mat-label>Input</mat-label> <input matInput> </mat-form-field> <mat-form-field class="input-example" appearance="fill"> <mat-label>Select</mat-label> <mat-select> <mat-option value="one">First option</mat-option> <mat-option value="two">Second option</mat-option> </mat-select> </mat-form-field> <mat-form-field class="input-example" appearance="fill"> <mat-label>Textarea</mat-label> <textarea matInput></textarea> </mat-form-field> </div>'
+  }
 
   ngOnInit(): void {
   }
