@@ -24,6 +24,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { ColorComponent } from './components/color/color.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ColorComponent } from './components/color/color.component';
     InputComponent,
     SidenavComponent,
     ComponentDisplayComponent,
-    ColorComponent
+    ColorComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
