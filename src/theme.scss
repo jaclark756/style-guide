@@ -11,6 +11,10 @@
 
 // // Create your Sass color vars (will be available in all the project)
 // $primary: mat-color($app-primary);
+$mat-md-teal: mat-color($md-teal);
+$mat-md-powder: mat-color($md-powder);
+$mat-md-white: mat-color($md-white);
+$mat-md-black: mat-color($md-black);
 // $accent: mat-color($app-accent);
 // $warn: mat-color($app-warn);
 
@@ -40,6 +44,14 @@ $dark-theme: mat-light-theme(
     $dark-primary,
     $dark-warn
 );
+
+.mat-teal{
+    background-color: $mat-md-teal!important;
+}
+
+.mat-powder{
+    background-color: $mat-md-powder;
+}
 // $dark-theme: mat-dark-theme(
 //   (
     // color: (

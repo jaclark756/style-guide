@@ -1,3 +1,5 @@
+@import '../../../styles';
+
 .flex-container {
   display: flex;
   align-items: center;
@@ -8,4 +10,40 @@
 button {
     padding: 10px;
     margin: 10px;
+}
+
+.black{
+  background-color: $black!important;
+}
+
+.jet{
+  background-color: $jet!important;
+}
+
+.powder{
+  background-color: $powder!important;
+}
+
+.watermelon{
+  background-color: $watermelon!important;
+}
+
+.onyx{
+  background-color: $onyx!important;
+}
+
+.metal{
+  background-color: $metal!important;
+}
+
+.teal{
+  background-color: $teal!important;
+}
+
+.mint{
+  background-color: $mint!important;
+}
+
+.white{
+  background-color: $white!important;
 }
