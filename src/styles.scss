@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/theming';
 @import "./theme.scss";
 @import '~highlight.js/styles/atom-one-dark.css';
 
@@ -34,9 +33,4 @@ body {
     font-family: 'Material Icons' !important;
 }
 
-@include angular-material-theme($default-app-theme);
-
-.dark-theme{
-  @include angular-material-color($secondary-theme);
-}
 

@@ -57,6 +57,11 @@ $secondary-theme: mat-light-theme(
     $secondary-warn
 );
 
+@include angular-material-theme($default-app-theme);
+
+.dark-theme{
+  @include angular-material-color($secondary-theme);
+}
 
 
 
