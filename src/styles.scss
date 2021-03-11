@@ -11,22 +11,22 @@ $page-height: 85vh;
 $purple-grey: rgb(179,179,204);
 
 // Our Actual Variables //
-$black: #141414ff;
-$jet: #363636ff;
-$onyx: #414141ff;
-$metal: #192734ff;
-$teal: #056571ff;
-$watermelon: #ff6a5cff;
-$mint: #c5d8c0ff;
-$powder: #f3f7f2ff;
-$white: #ffffffff;
+// $black: #141414ff;
+// $jet: #363636ff;
+// $onyx: #414141ff;
+// $metal: #192734ff;
+// $teal: #056571ff;
+// $watermelon: #ff6a5cff;
+// $mint: #c5d8c0ff;
+// $powder: #f3f7f2ff;
+// $white: #ffffffff;
 
 
 html, body { height: 100%; width:100%; position:fixed;}
 body { 
   margin: 0; 
   font-family: Roboto, "Helvetica Neue", sans-serif; 
-  background-color: #414141!important; 
+  background-color: $onyx!important; 
 }
 
 
@@ -34,12 +34,9 @@ body {
     font-family: 'Material Icons' !important;
 }
 
-@include angular-material-theme($main-app-theme);
+@include angular-material-theme($default-app-theme);
 
-.default-theme{
-  @include angular-material-theme($main-app-theme);
-}
 .dark-theme{
-  @include angular-material-color($dark-theme);
+  @include angular-material-color($secondary-theme);
 }
 

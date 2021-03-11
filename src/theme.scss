@@ -11,58 +11,116 @@
 
 // // Create your Sass color vars (will be available in all the project)
 // $primary: mat-color($app-primary);
-$mat-md-teal: mat-color($md-teal);
-$mat-md-powder: mat-color($md-powder);
-$mat-md-white: mat-color($md-white);
-$mat-md-black: mat-color($md-black);
 // $accent: mat-color($app-accent);
 // $warn: mat-color($app-warn);
-
-
 // $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
-
 // @include angular-material-theme($app-theme);
 
 
 
-$main-primary:  mat-palette($md-teal, 500, 300, 900);
-$main-accent: mat-palette($mat-blue-grey, 900, 300, 900);
-$main-warn:    mat-palette($mat-light-green, A100, 300, 900);
 
-$main-app-theme: mat-light-theme(
-    $main-primary,
-    $main-accent,
-    $main-warn
+// ----------------------------------- //
+// ----------------------------------- //
+
+$teal: mat-color($md-teal, 500);
+$powder: mat-color($md-powder, 500);
+$white: mat-color($md-white, 500);
+$black: mat-color($md-black, 500);
+$jet: mat-color($md-jet, 500);
+$onyx: mat-color($md-onyx, 500);
+$watermelon: mat-color($md-watermelon, 500);
+$metal: mat-color($md-metal, 500);
+$mint: mat-color($md-mint, 500);
+$white: mat-color($md-white, 500);
+
+// ----------------------------------- //
+// ----------------------------------- //
+
+
+$default-primary:  mat-palette($md-teal, 500, 300, 900);
+$default-accent: mat-palette($mat-blue-grey, 900, 300, 900);
+$default-warn:    mat-palette($mat-light-green, A100, 300, 900);
+
+$default-app-theme: mat-light-theme(
+    $default-primary,
+    $default-accent,
+    $default-warn
 );
 
 
-$dark-primary: mat-palette($mat-blue-grey);
-$dark-accent: mat-palette($mat-amber, A200, A100, A400);
-$dark-warn: mat-palette($mat-deep-orange);
-$dark-theme: mat-light-theme(
-    $dark-accent,
-    $dark-primary,
-    $dark-warn
+$secondary-primary: mat-palette($mat-blue-grey);
+$secondary-accent: mat-palette($mat-amber, A200, A100, A400);
+$secondary-warn: mat-palette($mat-deep-orange);
+$secondary-theme: mat-light-theme(
+    $secondary-accent,
+    $secondary-primary,
+    $secondary-warn
 );
 
-.mat-teal{
-    background-color: $mat-md-teal!important;
+
+
+
+// ----------------------------------- //
+// ----------------------------------- //
+
+.dark-button{
+    background-color: $onyx!important;
+    color: $powder!important;
+}
+.light-button{
+    background-color: $powder!important;
+    color: $black!important;
 }
 
-// .mat-powder-button{
-    // background-color: $mat-md-;
-// }
 
-// $dark-theme: mat-dark-theme(
-//   (
-    // color: (
-    //   primary: $dark-accent,
-    //   accent: $dark-primary,
-    //   warn: $dark-warn,
-    // ),
-//   )
-// );
+// ----------------------------------- //
+// ----------------------------------- //
 
-// .default-theme{
-//     @include angular-material-theme($main-app-theme)
-// }
+.bg-teal{
+    background-color: $teal!important;
+}
+.bg-powder{
+    background-color: $powder!important;
+}
+.bg-watermelon{
+    background-color: $watermelon!important;
+}
+.bg-jet{
+    background-color: $jet!important;
+}
+.bg-onyx{
+    background-color: $onyx!important;
+}
+.bg-metal{
+    background-color: $metal!important;
+}
+.bg-mint{
+    background-color: $mint!important;
+}
+.c-black{
+    color: $black!important;
+}
+.c-white{
+    color: $white!important;
+}
+.c-powder{
+    color: $powder!important;
+}
+.c-mint{
+    color: $mint!important;
+}
+.c-watermelon{
+    color: $watermelon!important;
+}
+.c-teal{
+    color: $teal!important;
+}
+.c-metal{
+    color: $metal!important;
+}
+.c-onyx{
+    color: $onyx!important;
+}
+.c-jet{
+    color: $jet!important;
+}

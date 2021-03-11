@@ -24,7 +24,8 @@ export class ColorComponent implements OnInit {
  
 
   openSnackBar(message: string) {
-    this._snackBar.open(message, "", {
+    let lilSnackMessage = message + " copied to clipboard"
+    this._snackBar.open(lilSnackMessage, "", {
       duration: 2000,
       verticalPosition: this.verticalPosition
     });
