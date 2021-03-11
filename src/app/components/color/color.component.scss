@@ -1,59 +1,63 @@
-@import '../../../styles';
+@import "../../../styles";
 
 .flex-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-   }
+}
 
 button {
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid $purple-grey;
-    // border: 1px solid $white;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid $purple-grey;
+  // border: 1px solid $white;
 }
 
-.black{
-  background-color: $black!important;
+.black {
+  background-color: $black !important;
 }
 
-.jet{
-  background-color: $jet!important;
+.jet {
+  background-color: $jet !important;
 }
 
-.powder{
-  background-color: $powder!important;
+.powder {
+  background-color: $powder !important;
 }
 
-.watermelon{
-  background-color: $watermelon!important;
+.watermelon {
+  background-color: $watermelon !important;
 }
 
-.onyx{
-  background-color: $onyx!important;
+.onyx {
+  background-color: $onyx !important;
 }
 
-.metal{
-  background-color: $metal!important;
+.metal {
+  background-color: $metal !important;
 }
 
-.teal{
-  background-color: $teal!important;
+.teal {
+  background-color: $teal !important;
 }
 
-.mint{
-  background-color: $mint!important;
+.mint {
+  background-color: $mint !important;
 }
 
-.white{
-  background-color: $white!important;
+.white {
+  background-color: $white !important;
 }
 
 .matTooltip {
   font-size: 18px;
 }
 
-mat-form-field {
-  margin-right: 12px;
+::ng-deep .custom-style {
+  background-color: $onyx;
+  border: 1px solid $purple-grey;
+  text-align: center;
+  justify-content: center !important;
+  width: 20px !important;
 }
