@@ -1,0 +1,40 @@
+@import "../../../styles.scss";
+
+.flex-container {
+    background-color: $purple-grey;
+    width:auto;
+    margin-top:5em;
+    border-radius:.5em;
+    width: 30em;
+}
+
+h1 {
+    padding: 20px 20px 5px 20px;
+}
+
+.mat-tab-group {
+margin: 20px;
+padding: 20px;
+}
+
+#web-font h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 32px;
+    padding: 0;
+  }
+
+#web-font p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+  
+  #mobile-font h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 32px;
+    padding: 0;
+  }
+
+#mobile-font p {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+  }
