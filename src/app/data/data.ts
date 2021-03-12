@@ -13,6 +13,6 @@ export const COMPONENTS = [
     },
     {
         display: 'Wireframes',
-        link: 'wireframes'
+        link: 'components/wireframes'
     }
 ]
