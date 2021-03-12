@@ -37,8 +37,8 @@ $white: mat-color($md-white, 500);
 // ----------------------------------- //
 
 
-$default-primary:  mat-palette($md-teal, 500, 300, 900);
-$default-accent: mat-palette($mat-blue-grey, 900, 300, 900);
+$default-primary:  mat-palette($md-teal, 500, 200, 900);
+$default-accent: mat-palette($md-mint, 500, 200, 900);
 $default-warn:    mat-palette($mat-light-green, A100, 300, 900);
 
 $default-app-theme: mat-light-theme(
@@ -52,14 +52,14 @@ $secondary-primary: mat-palette($mat-blue-grey);
 $secondary-accent: mat-palette($mat-amber, A200, A100, A400);
 $secondary-warn: mat-palette($mat-deep-orange);
 $secondary-theme: mat-light-theme(
-    $secondary-accent,
     $secondary-primary,
+    $secondary-accent,
     $secondary-warn
 );
 
 @include angular-material-theme($default-app-theme);
 
-.dark-theme{
+.-theme{
   @include angular-material-color($secondary-theme);
 }
 
@@ -77,6 +77,8 @@ $secondary-theme: mat-light-theme(
     color: $black!important;
 }
 
+// .border-metal{}
+// .border-onyx{}
 
 // ----------------------------------- //
 // ----------------------------------- //
