@@ -10,5 +10,13 @@ export const COMPONENTS = [
     {
         display: 'Input',
         link: 'components/input'
+    },
+    {
+        display: 'Wireframes',
+        link: 'wireframes'
+    },
+    {
+        display: 'Styling',
+        link: 'styling'
     }
 ]
