@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
-import {ClipboardModule} from '@angular/cdk/clipboard'; 
+import { ClipboardModule } from '@angular/cdk/clipboard'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,21 +12,20 @@ import { CardComponent } from './components/card/card.component';
 import { InputComponent } from './components/input/input.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component'; 
 import { ComponentDisplayComponent } from './components/component-display/component-display.component';
+import { ColorComponent } from './components/color/color.component';
 
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
-
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatSelectModule} from '@angular/material/select';
-import {MatTooltipModule} from '@angular/material/tooltip';
-import { ColorComponent } from './components/color/color.component';
-import { HeaderComponent } from './components/header/header.component';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { WireframesComponent } from './components/wireframes/wireframes.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -38,22 +37,23 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     SidenavComponent,
     ComponentDisplayComponent,
     ColorComponent,
-    HeaderComponent
+    WireframesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ClipboardModule,
+    HighlightModule,
     MatListModule,
     MatExpansionModule,
     MatButtonModule,
     MatTabsModule,
-    HighlightModule,
     MatFormFieldModule, 
     MatInputModule,
     MatSelectModule,
+    MatCardModule,
     MatTooltipModule,
-    ClipboardModule,
     MatSnackBarModule
   ],
   providers: [
