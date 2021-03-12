@@ -25,7 +25,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { WireframesComponent } from './components/wireframes/wireframes.component';
-
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -52,6 +52,7 @@ import { WireframesComponent } from './components/wireframes/wireframes.componen
     MatFormFieldModule, 
     MatInputModule,
     MatSelectModule,
+    MatCardModule,
     MatTooltipModule,
     MatSnackBarModule
   ],
