@@ -1,33 +1,33 @@
-<mat-expansion-panel hideToggle class="expansion-container">
-    <mat-expansion-panel-header collapsedHeight="10em" expandedHeight="10em"  class="expansion-header">
-        <mat-panel-title>
-            Button
-        </mat-panel-title>
-        <mat-form-field appearance="fill">
-            <mat-label>Input</mat-label>
-            <input matInput>
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-            <mat-label>Select</mat-label>
-            <mat-select>
-                <mat-option value="one">First option</mat-option>
-                <mat-option value="two">Second option</mat-option>
-            </mat-select>
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-            <mat-label>Textarea</mat-label>
-            <textarea matInput></textarea>
-        </mat-form-field>
-    </mat-expansion-panel-header>
-    <mat-tab-group mat-align-tabs="start" mat-stretch-tabs>
-        <mat-tab id="button-html" label="HTML">
-            <pre><code></code></pre>
-        </mat-tab>
-        <mat-tab id="button-scss" label="SCSS">
-            
-        </mat-tab>
-        <mat-tab id="button-ts" label="TS">
-            
-        </mat-tab>
-    </mat-tab-group>
-</mat-expansion-panel>
+<mat-card class="card-container">
+    <mat-card-content>
+        <div class="form-example"> 
+            <mat-form-field class="input-example" appearance="fill">
+                <mat-label>Input</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field class="input-example" appearance="fill">
+                <mat-label>Select</mat-label>
+                <mat-select>
+                    <mat-option value="one">First option</mat-option>
+                    <mat-option value="two">Second option</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="input-example" appearance="fill">
+                <mat-label>Textarea</mat-label>
+                <textarea matInput></textarea>
+            </mat-form-field>
+        </div>
+        <mat-tab-group mat-align-tabs="start" mat-stretch-tabs>
+            <mat-tab id="button-html" label="HTML">
+                <pre><code [highlight]="htmlSnippet"></code></pre>
+            </mat-tab>
+            <mat-tab id="button-scss" label="SCSS">
+                <pre><code [highlight]="scssSnippet"></code></pre>
+            </mat-tab>
+            <mat-tab id="button-ts" label="TS">
+                <pre><code [highlight]="tsSnippet"></code></pre>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card-content>
+</mat-card>
+

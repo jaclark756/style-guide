@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/theming';
 @import "./theme.scss";
 @import '~highlight.js/styles/atom-one-dark.css';
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat&family=Playfair+Display&display=swap');
@@ -8,26 +7,26 @@
 // ----------- //
 //  Variables  //
 // ----------- //
-$page-height: 85vh;
+$page-height: 80vh;
 $purple-grey: rgb(179,179,204);
 
 // Our Actual Variables //
-$black: #141414ff;
-$jet: #363636ff;
-$onyx: #414141ff;
-$metal: #192734ff;
-$teal: #056571ff;
-$watermelon: #ff6a5cff;
-$mint: #c5d8c0ff;
-$powder: #f3f7f2ff;
-$white: #ffffffff;
+// $black: #141414ff;
+// $jet: #363636ff;
+// $onyx: #414141ff;
+// $metal: #192734ff;
+// $teal: #056571ff;
+// $watermelon: #ff6a5cff;
+// $mint: #c5d8c0ff;
+// $powder: #f3f7f2ff;
+// $white: #ffffffff;
 
 
 html, body { height: 100%; width:100%; position:fixed;}
 body { 
   margin: 0; 
   font-family: Roboto, "Helvetica Neue", sans-serif; 
-  background-color: #414141!important; 
+  background-color: $onyx!important; 
 }
 
 
@@ -35,14 +34,7 @@ body {
     font-family: 'Material Icons' !important;
 }
 
-@include angular-material-theme($main-app-theme);
 
-.default-theme{
-  @include angular-material-theme($main-app-theme);
-}
-.dark-theme{
-  @include angular-material-color($dark-theme);
-}
 
 body {
   font-family: 'Dosis', sans-serif;
@@ -90,4 +82,9 @@ h5{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
   }
+}
+
+/* custom mat styles */
+.mat-tab-body {
+  max-width: 40em !important;
 }

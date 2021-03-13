@@ -3,10 +3,9 @@
 
 .fixed-sidenav{
     border-radius:.5em;
-    height:$page-height;
+    height:65vh;
     width:15em;
     position: fixed;
     overflow: auto;
     background-color: $purple-grey;
-    // box-shadow: rgba(228, 172, 74, 0.694) 0px 4px 12px;
 }
