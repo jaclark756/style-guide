@@ -24,6 +24,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { WireframesComponent } from './components/wireframes/wireframes.component';
 import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
@@ -36,6 +37,7 @@ import { MatCardModule } from '@angular/material/card';
     SidenavComponent,
     ComponentDisplayComponent,
     ColorComponent,
+    WireframesComponent,
   ],
   imports: [
     BrowserModule,

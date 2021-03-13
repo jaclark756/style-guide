@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatSnackBar, MatSnackBarVerticalPosition} from '@angular/material/snack-bar';
+import { MatSnackBar, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-color',
@@ -17,21 +17,22 @@ export class ColorComponent implements OnInit {
   $mint = "$mint";
   $powder = "$powder";
   verticalPosition: MatSnackBarVerticalPosition = 'top';
-  // private _snackBar: any;
+
 
 
   constructor(private _snackBar: MatSnackBar) { }
- 
+
 
   openSnackBar(message: string) {
-    let lilSnackMessage = message + " copied to clipboard"
+    let lilSnackMessage = message + " copied to clipboard!"
     this._snackBar.open(lilSnackMessage, "", {
       duration: 2000,
-      verticalPosition: this.verticalPosition
+      verticalPosition: this.verticalPosition,
+      panelClass: ["custom-style"]
     });
   }
- 
+
   ngOnInit(): void {
   }
-  
+
 }
