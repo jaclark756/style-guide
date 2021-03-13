@@ -10,9 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
 import { InputComponent } from './components/input/input.component';
-import { SidenavComponent } from './components/sidenav/sidenav.component'; 
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ComponentDisplayComponent } from './components/component-display/component-display.component';
-import { ColorComponent } from './components/color/color.component';
 
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 import { MatListModule } from '@angular/material/list';
@@ -23,6 +22,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { ColorComponent } from './components/color/color.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { TypographyComponent } from './components/typography/typography.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+
+
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { WireframesComponent } from './components/wireframes/wireframes.component';
 import { MatCardModule } from '@angular/material/card';
@@ -37,6 +46,9 @@ import { MatCardModule } from '@angular/material/card';
     SidenavComponent,
     ComponentDisplayComponent,
     ColorComponent,
+    HeaderComponent,
+    FooterComponent,
+    TypographyComponent,
     WireframesComponent,
   ],
   imports: [
@@ -49,12 +61,18 @@ import { MatCardModule } from '@angular/material/card';
     MatExpansionModule,
     MatButtonModule,
     MatTabsModule,
+    HighlightModule,
+    MatFormFieldModule,
     MatFormFieldModule, 
     MatInputModule,
     MatSelectModule,
     MatCardModule,
     MatTooltipModule,
-    MatSnackBarModule
+    ClipboardModule,
+    MatSnackBarModule,
+    ScrollingModule,
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [
     {
