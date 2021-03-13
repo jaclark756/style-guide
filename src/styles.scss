@@ -2,6 +2,7 @@
 @import '~@angular/material/theming';
 @import "./theme.scss";
 @import '~highlight.js/styles/atom-one-dark.css';
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat&family=Playfair+Display&display=swap');
 
 
 // ----------- //
@@ -43,3 +44,50 @@ body {
   @include angular-material-color($dark-theme);
 }
 
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+h1{
+  font-size: 32px;
+}
+
+h2{
+  font-size: 24px;
+}
+h3{
+  font-size: 18.7167px;
+}
+h5{
+  font-size: 13.2833x;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  h1{
+    font-size: 32px;
+  }
+  
+  h2{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 18.7167px;
+  }
+  h5{
+    font-size: 13.2833x;
+  }
+
+  body p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+}

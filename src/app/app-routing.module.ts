@@ -6,6 +6,8 @@ import { HomeComponent } from './components/home/home.component';
 import { InputComponent } from './components/input/input.component';
 import { ColorComponent } from './components/color/color.component';
 import { HeaderComponent } from './components/header/header.component';
+import { TypographyComponent } from './components/typography/typography.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -14,7 +16,7 @@ const routes: Routes = [
   {path: 'components/card', component: CardComponent},
   {path: 'components/input', component: InputComponent},
   {path: 'components/color', component: ColorComponent},
-
+  {path: 'components/typography', component: TypographyComponent},
 ];
 
 @NgModule({
