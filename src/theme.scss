@@ -37,9 +37,10 @@ $white: mat-color($md-white, 500);
 // ----------------------------------- //
 
 
-$default-primary:  mat-palette($md-teal, 500, 200, 900);
+$default-primary:  mat-palette($md-mint, 500, 200, 900);
 $default-accent: mat-palette($md-mint, 500, 200, 900);
-$default-warn:    mat-palette($mat-light-green, A100, 300, 900);
+$default-warn:    mat-palette($md-watermelon, A100, 300, 900);
+
 
 $default-app-theme: mat-light-theme(
     $default-primary,
@@ -48,10 +49,9 @@ $default-app-theme: mat-light-theme(
 );
 
 
-
-$secondary-primary: mat-palette($mat-blue-grey);
-$secondary-accent: mat-palette($mat-amber, A200, A100, A400);
-$secondary-warn: mat-palette($mat-deep-orange);
+$secondary-primary: mat-palette($md-onyx);
+$secondary-accent: mat-palette($md-powder, A200, A100, A400);
+$secondary-warn: mat-palette($md-watermelon);
 $secondary-theme: mat-light-theme(
     $secondary-primary,
     $secondary-accent,

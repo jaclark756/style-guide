@@ -1,0 +1,20 @@
+@import "../../../styles.scss";
+
+
+.card-container{
+    height:70vh;
+    background-color: $teal;
+    width: 50%;
+    margin: auto;
+    border-radius:.5em;
+    padding: 25px;
+}
+
+img {
+    // width: 50%;
+    // display: block;
+    // margin: auto;
+
+    background-size: cover;
+    padding-bottom: 10px;
+}
