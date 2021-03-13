@@ -23,7 +23,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ColorComponent } from './components/color/color.component';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { TypographyComponent } from './components/typography/typography.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
